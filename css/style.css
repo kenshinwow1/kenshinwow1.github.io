@@ -140,7 +140,7 @@ color: #85CCDC;
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 100px 75px;
-    counter-reset: counter;
+    counter-reset: number;
 
 }
 
@@ -163,14 +163,19 @@ align-items: center;
 
 
 .seasons__item::before{
-    content: '0'counter(counter);
-    counter-increment: counter;
+    content: '0'counter(number);
+    counter-increment: number;
     position: absolute;
     font-weight: bold;
     font-size: 96px;
     line-height: 112px;
     color: #600E09;
+    left: 0;
+    top: -72px;
+    z-index: -1;
 }
+.seasons__item:nth-child(n+10)::before
+content: counter(number);
 
 .seasons_link{
 font-size: 36px;
