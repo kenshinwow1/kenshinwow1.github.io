@@ -77,7 +77,7 @@ transform: rotate(180deg);
     text-decoration: underline;
 }
 .logo{
-    padding-top: 56px;
+    padding-top: 17vh;
 }
 .about_inner{
     display: flex;
@@ -265,4 +265,21 @@ position: relative;
 
 }
 /* season 1 */
+
+
+
+/* start media */
+
+
+@media (max-widht: 1366px){
+    .logo__img{
+        width: 50%;
+    }
+    .menu__list-link{
+    font-size: 24px;
+    line-height: 32px;
+}
+}
+
+/* end media */ 
 
